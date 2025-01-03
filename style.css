@@ -1,0 +1,84 @@
+/* กำหนดพื้นหลังและการตั้งค่าพื้นฐาน */
+body {
+    background-color: #f0e68c;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ซ่อนปุ่มและเนื้อหาจนกว่าจะคลิก */
+.hidden {
+    display: none;
+}
+
+/* รูปภาพในแกลเลอรี */
+#image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ข้อความ */
+.message {
+    font-size: 1.5em;
+    color: #32cd32;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ปุ่ม */
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #e55347;
+}
+
+/* จัดตำแหน่งของเนื้อหา */
+#content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ส่วนที่ใช้แสดงคำถาม */
+#question-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#birthday-answer {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#error-message {
+    color: red;
+    font-size: 1.1em;
+    margin-top: 10px;
+}

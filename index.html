@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>natty level 20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ส่วนของคำถามสำหรับกรอกคำตอบ -->
+
+        <div id="question-section">
+            <h2>Whose birthday is it today?</h2>
+            <input type="text" id="birthday-answer" placeholder="Answer here">
+            <button id="check-answer-btn">confirm </button>
+            <p id="error-message" class="hidden" style="color: red;">ม่ายถูกน้าบิบี๋ ต้องลองใหม่ ._.</p>
+        </div>
+
+        <!-- แสดงคลิปวิดีโอและข้อความเมื่อผู้ใช้ตอบคำถามถูก -->
+        <div id="video-section" class="hidden">
+            <video id="birthday-video" width="300" height="auto" autoplay muted>
+                <source src="757603512.629184.mp4" type="video/mp4">
+            </video>
+            <h1 id="birthday-message">Happy Birthday My Babe ❤ ❤ </h1>
+        </div>
+
+        <!-- ปุ่มแสดงรูปภาพเมื่อคลิปวิดีโอจบ -->
+        <button id="show-images-btn" class="hidden">Click here!</button>
+
+        <!-- รูปภาพ 3 รูปและข้อความแสดงความยินดี -->
+        <div id="content" class="hidden">
+            <div id="image-gallery">
+                <img src="S__2433038_0.jpg" alt="รูป 1" class="gallery-image">
+                <img src="S__2433040_0.jpg" alt="รูป 2" class="gallery-image">
+                <img src="S__2433041_0.jpg" alt="รูป 3" class="gallery-image">
+            </div>
+            <p id="surprise-message" class="message">
+                เค้าขอให้บิบี๋เป็นสิ่งโปรดปรานของเทพีแห่งความสุข ชีจะได้บันดาลให้บี๋มีความสุขอยู่เสมอ
+                ร่างกายแข็งแรงปึงปั้ง ขอให้บี๋หล่อ ๆ เค้าเลิฟบิบี๋นะ
+            </p>
+        </div>
+    </div>
+
+    <audio id="sound-effect" src="https://www.example.com/sound.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
